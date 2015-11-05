@@ -36,7 +36,19 @@ namespace Vsite.CSharp
                 case DayOfWeek.Monday:
                     return "ponedjeljak";
 
-                // TODO: Dopisati grane case za svaki dan u tjednu (DayOfWeek.Tuesday = Utorak, itd.)
+                //Dopisati grane case za svaki dan u tjednu (DayOfWeek.Tuesday = Utorak, itd.)
+                case DayOfWeek.Tuesday:
+                    return "utorak";
+                case DayOfWeek.Wednesday:
+                    return "srijeda";
+                case DayOfWeek.Thursday:
+                    return "četvrtak";
+                case DayOfWeek.Friday:
+                    return "petak";
+                case DayOfWeek.Saturday:
+                    return "subota";
+                case DayOfWeek.Sunday:
+                    return "nedjelja";
 
                 default:
                     return "Neispravan dan u tjednu";
@@ -47,9 +59,21 @@ namespace Vsite.CSharp
         {
             switch (danUTjednu)
             {
-                // TODO: Dopisati grane case tako da za svaki radni dan u tjednu vraća "radni dan", a za subotu i nedjelju vraća "vikend"
+                //Dopisati grane case tako da za svaki radni dan u tjednu vraća "radni dan", a za subotu i nedjelju vraća "vikend"
                 case DayOfWeek.Monday:
                     return "radni dan";
+                case DayOfWeek.Tuesday:
+                    return "radni dan";
+                case DayOfWeek.Wednesday:
+                    return "radni dan";
+                case DayOfWeek.Thursday:
+                    return "radni dan";
+                case DayOfWeek.Friday:
+                    return "radni dan";
+                case DayOfWeek.Saturday:
+                    return "neradni dan";
+                case DayOfWeek.Sunday:
+                    return "neradni dan";
 
                 default:
                     return "Neispravan dan u tjednu";
